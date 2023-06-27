@@ -2,7 +2,6 @@ import React, { useState, useRef } from "react";
 import styles from "./cards.module.scss";
 import { themeDirectory } from "./theme.data";
 import arrow from './images/arrow.png'
-import image1 from './images/image1.png'
 
 function Cards() {
   const [dragging, setDragging] = useState(false);
