@@ -1,4 +1,3 @@
-import React from 'react'
 import styles from './banner.module.scss'
 import logo from '../header/images/logo.png'
 import Button from '../button/Button'

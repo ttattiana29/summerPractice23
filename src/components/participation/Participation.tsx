@@ -1,4 +1,3 @@
-import React from 'react'
 import styles from './participation.module.scss'
 import elipses from './images/elipses.png'
 

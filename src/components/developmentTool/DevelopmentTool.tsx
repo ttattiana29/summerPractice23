@@ -1,4 +1,3 @@
-import React from 'react'
 import styles from './developmentTool.module.scss'
 import light from './images/light.png'
 const DevelopmentTool = () => {

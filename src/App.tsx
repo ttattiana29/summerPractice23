@@ -1,4 +1,3 @@
-import { useState } from 'react'
 import'./global.module.scss'
 import Header from './components/header/Header'
 import Banner from './components/banner/Banner'

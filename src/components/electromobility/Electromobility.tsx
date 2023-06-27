@@ -1,4 +1,3 @@
-import React from 'react'
 import styles from './electromobility.module.scss'
 import present from './images/present.png'
 import star from './images/star.png'

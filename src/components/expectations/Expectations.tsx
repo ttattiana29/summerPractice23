@@ -1,4 +1,3 @@
-import React from 'react'
 import styles from './expectations.module.scss'
 import borders from './images/borders.png'
 import star from './images/star.png'

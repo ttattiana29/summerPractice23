@@ -1,4 +1,3 @@
-import React from 'react'
 import styles from './selection.module.scss'
 import image1 from './images/1.png'
 import image2 from './images/2.png'

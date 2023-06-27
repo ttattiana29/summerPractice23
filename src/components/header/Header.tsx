@@ -1,10 +1,8 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import styles from '../header/header.module.scss';
 import logo from './images/logo.png';
 import close from './images/close.png';
 import menu from './images/menu.png';
-import { NavLink, NavLinkProps } from 'react-router-dom';
-import { RouteProps } from 'react-router';
 import telegram from './images/telegram.png'
 
 const Header = () => {

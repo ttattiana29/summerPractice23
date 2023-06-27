@@ -1,4 +1,3 @@
-import React from 'react'
 import styles from './cooperation.module.scss'
 import light from './images/light.png'
 import lightMobile from './images/lightMobile.png'

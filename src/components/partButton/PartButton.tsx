@@ -1,4 +1,3 @@
-import React from 'react'
 import styles from './partButton.module.scss'
 import light from './images/light.png'
 import Button from '../button/Button'
