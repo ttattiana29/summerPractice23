@@ -2,6 +2,7 @@ import React, { useState, useRef } from "react";
 import styles from "./cards.module.scss";
 import { themeDirectory } from "./theme.data";
 import arrow from './images/arrow.png'
+import image1 from './images/image1.png'
 
 function Cards() {
   const [dragging, setDragging] = useState(false);
@@ -50,7 +51,7 @@ function Cards() {
             <li key={index} className={`${styles.card} ${styles.clip}`} style={{ backgroundColor: theme.color }}>
               <div className={styles.cardMain}>
                   <div className={styles.cardLogo}>
-                    <img src={`/src/components/cards/images/${theme.id}.png`} alt={`Image for ${theme.id}`} />
+                  <img src={`/summerPractice23/src/components/cards/images/${theme.id}.png`} alt={`Image for ${theme.text}`} />
                   </div>
                   <div className={styles.cardContent}>
                     <p>{theme.text}</p>
