@@ -1,0 +1,299 @@
+@import '../../global.module.scss';
+
+.main {
+    width: 86%;
+    margin: 30px auto 0;
+    padding-top: 46px;
+    box-sizing: border-box;
+}
+.fifthAcceleration {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: #5B93E1;
+}
+.electromobilitySection {
+    font-family: 'Dela Gothic One', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 44px;
+    line-height: 150%;
+    color: var(--white);
+    margin-bottom: 87.62px;
+}
+.presentSection {
+    position: relative;
+    width: 100%;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    height: 23.4vw;
+    display: flex;
+    padding-top: 30px;
+    box-sizing: border-box;
+}
+.defaultHeight {
+    height: auto;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+.presentImage {
+    height: 123px;
+    background-size: 100%;
+    // width: 27.7vw; /* высота элемента будет автоматически подстраиваться под ширину */
+}
+.leftSection {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+}
+.leftSection b {
+    display: block;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 32px;
+    color: var(--mainBlue);
+  }
+  .leftSection img {
+    margin-top: auto;
+  }
+  .rightSection {
+    padding-right: 5vw;
+    box-sizing: border-box;
+    // background-color: bisque;
+    width: 47%;
+    height: auto;
+    margin-left: auto;
+  }
+  .rightSection p {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 150%;
+    color: var(--white);
+  }
+  .rightSectionList {
+    width: 47%;
+    height: auto;
+    margin-left: auto;
+    padding-right: 5vw;
+    box-sizing: border-box;
+  }
+  .rightSectionList p {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 150%;
+    color: var(--white);
+    margin-bottom: 5px;
+  }
+  .ulSection {
+    // margin: 0;
+    padding: 0;
+  }
+  .liSection {
+    display: flex;
+    margin-bottom: 12px;
+  }
+  .liSection img {
+    width: 43.5px;
+    height: 39.36px;
+    margin-right: 29px;
+  }
+  .directionGraphic {
+    position: relative;
+  }
+  .direction {
+    position: absolute;
+    top: -200px;
+    left: -41vw;
+    height: 1548px;
+    width: auto;
+  }
+  .withoutBorder {
+    border-top: none;
+  }
+  .directionTitle {
+    font-family: 'Dela Gothic One', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 44px;
+    line-height: 150%;
+    color: var(--white);
+    margin-bottom: 80px;
+  }
+  .ulDirection {
+    padding: 0;
+  }
+  .liDirection {
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    padding-top: 15px;
+    box-sizing: border-box;
+    display: flex;
+    margin-bottom: 31px;
+  }
+  .liDirection span{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 140%;
+    background: linear-gradient(210.08deg, #FFFFFF -11.1%, rgba(255, 255, 255, 0) 86.84%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-shadow: 0px 10.4051px 27.747px rgba(0, 0, 0, 0.16);
+    backdrop-filter: blur(8.67094px);
+    margin-right: 68px;
+  }
+  .rightSection .directionTitle {
+    margin-bottom: 500px;
+  }
+  @media (max-width: 1200px) {
+    .fifthAcceleration {
+        font-size: 14px;
+    }
+    .electromobilitySection {
+        margin-bottom: 50px;
+    }
+    .presentImage {
+        height: 100px;
+        background-size: 100%;
+    }
+    .presentSection {
+        height: auto;
+        padding-top: 20px;
+        box-sizing: border-box;
+    }
+    .leftSection img {
+        width: 100%;
+        background-size: 100%;
+    }
+    .rightSection {
+        width: 55%;
+        padding: 0;
+    }
+    .rightSection p {
+        font-size: 16px;
+        width: 100%;
+        flex-grow: 1;
+        margin-bottom: 15px;
+    }
+    .rightSectionList {
+        width: 55%;
+        // margin-left: 5%;
+    }
+    .rightSectionList p {
+        font-size: 16px;
+        width: 100%;
+        flex-grow: 1;
+    }
+    .leftSection b {
+        font-size: 25px;
+    }
+    .liSection img {
+        margin-right: 15px;
+    }
+    .direction {
+        position: absolute;
+        top: -310px;
+        left: -40vw;
+        height: 1300px;
+        width: auto;
+    }
+    .directionGraphic {
+        position: relative;
+    }
+  }
+
+  @media (max-width: 900px) {
+    .fifthAcceleration {
+        font-size: 12px;
+    }
+    .electromobilitySection {
+        margin-bottom: 35px;
+    }
+    .leftSection b {
+        margin-bottom: 19.12px;
+    }
+    .presentSection {
+        display: block;
+        height: auto;
+        margin-bottom: 46px;
+        padding: 0;
+        border: none;
+    }
+    .leftSection img {
+        display: none;
+    }
+    .rightSection {
+        margin: 0;
+        width: 80%;
+    }
+    .rightSectionList {
+        margin: 0;
+        width: 80%;
+    }
+    .direction {
+        display: none;
+    }
+    .liDirection span {
+        background: initial;
+        -webkit-text-fill-color: initial;
+        color: var(--mainBlue);
+        font-size: 25px;
+    }
+    .defaultHeight {
+        height: auto;
+        border: none;
+    }
+  }
+
+  @media (max-width: 505px) {
+    .main {
+        width: 90%;
+    }
+    .fifthAcceleration {
+        font-size: 8px;
+        margin-bottom: 11px;
+    }
+    .electromobilitySection {
+        font-size: 24px;
+    }
+    .leftSection b {
+        font-size: 18px;
+    }
+    .rightSection {
+        width: 87%;
+    }
+    .rightSection p {
+        font-size: 14px;
+    }
+    .liSection {
+        align-items: center;
+    }
+    .liSection img {
+        margin-right: 15px;
+        width: 21.32px;
+        height: 19.36px;
+    }
+    .rightSectionList {
+        width: 100%;
+    }
+    .rightSectionList p {
+        font-size: 14px;
+    }
+    .liDirection span {
+        margin-right: 25px;
+    }
+    .rightSection{
+        width: 100%;
+    }
+    .liDirection {
+        margin: 0 0 10px;
+        padding-top: 15px;
+        box-sizing: border-box;
+        padding-right: 10px;
+    }
+  }

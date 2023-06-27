@@ -1,0 +1,436 @@
+@import '../../global.module.scss';
+
+.main,
+.eventsAndDates {
+  width: 86%;
+  margin: 0 auto;
+  color: var(--white);
+  text-align: center;
+  position: relative;
+  h2,
+  p {
+    font-size: 44px;
+    margin-bottom: 32px;
+    position: relative;
+    z-index: 2;
+  }
+
+  p {
+    font-size: 26px;
+    margin-bottom: 67px;
+  }
+}
+br {
+    display: none;
+}
+.lightImage {
+  position: absolute;
+  left: 0;
+  top: -500px;
+  bottom: 0;
+  width: 100%;
+  height: auto;
+  z-index: 2;
+}
+.lightMobileImage {
+    display: none;
+}
+.backgroundImage {
+  position: absolute;
+  left: 0;
+  top: 200px;
+  width: 100%;
+  height: auto;
+  filter: blur(100px);
+}
+.cells {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  min-height: 100%;
+  margin-bottom: 102px;
+}
+.cell {
+  flex: 1;
+  margin-right: 20px;
+  width: 400px;
+  height: 340px;
+  background: linear-gradient(
+    169.36deg,
+    rgba(255, 255, 255, 0.8) -35.46%,
+    rgba(255, 255, 255, 0) 94.83%
+  );
+  box-shadow: 0 20px 20px rgba(0, 0, 0, 0.16);
+  backdrop-filter: blur(13.39px);
+  border-radius: 24px;
+  padding: 49px 64px;
+  box-sizing: border-box;
+  z-index: 3;
+}
+
+.cell img {
+  object-fit: cover;
+  object-position: center;
+  width: 68%;
+  height: auto;
+}
+
+.cell:last-child {
+  margin-right: 0;
+}
+
+.cell h3 {
+  font-size: 26px;
+  margin-bottom: 8px;
+}
+
+.cell p {
+  font-size: 16px;
+}
+.eventsAndDates {
+    width: 95%;
+    margin: 0 auto;
+    position: relative;
+}
+.eventTitle {
+    font-size: 44px;
+    margin: 0;
+    position: relative;
+    z-index: 2;
+}
+.eventsImage {
+    position: absolute;
+    width: 100%;
+    height: auto;
+    left: 0;
+    top: -80px
+}
+.eventsMobileImage {
+    display: none;
+}
+.events {
+    position: relative;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    width: 66.66%;
+    margin-top: 18vw;
+  }
+  
+  .event {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    // background-color: #f4f4f4;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 200px;
+    max-width: calc(100% / 4 - 20px);
+    margin-right: 20px;
+
+    span {
+        font-size: 14px;
+        color: var(--lightBlue);
+        line-height: 21px;
+    }
+    p, b {
+        font-size: 18px;
+    }
+  }
+  .event:first-child {
+    margin-right: 20px;
+    margin-left: 18px;
+    width: 190px;
+  }
+  .event:last-child {
+    margin-right: 22px;
+  }
+@media (max-width: 1240px) {
+    .events {
+        margin-left: 1vw;
+    }
+    .eventsImage {
+        top: -2vw;
+    }
+    .event {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        width: 10vw;
+        max-width: calc(100% / 4 - 20px);
+        margin-right: 4.1vw;
+    
+        span {
+            font-size: 1.1vw;
+            color: var(--lightBlue);
+            line-height: 21px;
+        }
+        p, b {
+            font-size: 1.3vw;
+        }
+      }
+      .event:first-child {
+        margin-right: 4.5vw;
+        margin-left: 2.2vw;
+        width: 10vw;
+      }
+      .event:last-child {
+        margin-right: 2.4vw;
+        margin-left: 0vw;
+      }
+}
+@media (max-width: 1082px) {
+    .main h2 {
+        font-size: 40px;
+        margin-bottom: 10px;
+    }
+    .main p {
+        font-size: 20px;
+        margin-bottom: 40px;
+    }
+    .cell {
+        padding: 20px 10px;
+        height: auto;
+        h3 {
+            font-size: 21px;
+        }
+        p {
+            font-size: 14px;
+        }
+    }
+    .lightImage {
+        top: -400px;
+    }
+}
+
+@media (max-width: 800px) {
+    .main, .eventsAndDates{
+        width: 60%;
+        h2 {
+            font-size: 38px;
+        }
+        p {
+            font-size: 18px;
+        }
+    }
+    .cells {
+        display: block;
+        margin: 0 auto 80px;
+        z-index: 3;
+    }
+    .cell {
+        display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        text-align: left;
+        margin-bottom: 30px;
+        padding: 0 20px;
+        box-sizing: border-box;
+        position: relative;
+        z-index: 2;
+      }
+      .cell img {
+        // float: left;
+        margin-right: 20px;
+        width: 35%;
+
+      }
+      .cellText {
+        width: 50%;
+        margin-left: auto;
+      }
+    
+    .lightImage {
+        // width: 80%;
+        height: 300vh;
+        top: -700px;
+        z-index: 1;
+    }
+    .backgroundImage {
+        display: none;
+    }
+    .eventsImage {
+        display: none;
+    }
+    .eventsMobileImage {
+        
+        display: block;
+        position: absolute;
+        width: 70%;
+        height: auto;
+        left: 0;
+        bottom: 0;
+        top: 9vw;
+    }
+    .events {
+        position: relative;
+        margin: 0;
+        margin-left: auto;
+        width: 60%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        text-align: left;
+        z-index: 2;
+      }
+      .event {
+        width: 230px !important;
+        height: 9vw;
+        margin: 0, auto;
+        text-align: left;
+        padding: 0;
+        margin-bottom: 1.5vw;
+        box-sizing: border-box;
+        max-width: initial;
+        span {
+            font-size: 8px;
+            margin-right: auto;
+            text-align: left;
+        }
+        b, p {
+            font-size: 16px;
+            margin: 0;
+            line-height: initial;
+            margin-right: auto;
+        }
+      }
+      .event:first-child {
+        margin: 0;
+        margin-bottom: 2.5vw;
+        margin-top: 0;
+      }
+      .event:last-child {
+        margin-top: 1vw;
+        margin-bottom: 1vw;
+      }
+}
+@media (max-width: 600px) {
+    .main, .eventsAndDates {
+        width: 86%;
+        h2 {
+            font-size: 24px;
+            margin-bottom: 12px;
+        }
+        p {
+            font-size: 14px;
+            margin-bottom: 41px;
+        }
+    }
+    .cell {
+        position: relative;
+        padding: 10px 10px;
+        box-sizing: border-box;
+        z-index: 2;
+    }
+    .cellText {
+        margin: 0;
+        z-index: 2;
+        h3 {
+            font-size: 16px;
+        }
+        p {
+            font-size: 12px;
+        }
+    }
+    .lightImage {
+        display: none;
+    }
+    .lightMobileImage {
+        display: inline;
+        position: absolute;
+        left: 0;
+        top: -750px;
+        width: 100%;
+        height: auto;
+        z-index: 1;
+    }
+    .eventsMobileImage {
+        top: 10vw;
+        left: 5vw;
+    }
+    .events {
+        width: 54%;
+    }
+    .event {
+        margin-bottom: 6.7vw;
+
+        span {
+            font-size: 8px;
+            margin-right: auto;
+            // margin-bottom: 9px;
+            // line-height: initial;
+            text-align: left;
+        }
+        b, p {
+            font-size: 16px;
+            margin: 0;
+            line-height: initial;
+            margin-right: auto;
+        }
+      }
+      .event:first-child {
+        margin: 0;
+        margin-bottom: 6.7vw;
+        margin-top: 3vw;
+      }
+      .event:last-child {
+        margin-top: 0.6vw;
+        margin-bottom: 4vw;
+
+      }
+      br {
+        display: block;
+      }
+}
+@media (max-width: 420px) {
+    .eventsAndDates{
+        width: 100%;
+    }
+    .eventsMobileImage {
+        width: 100%;
+        left: -20px;
+    }
+    .events {
+        width: 48%;
+    }
+    .event {
+        margin-bottom: 20vw;
+
+        span {
+            font-size: 8px;
+            margin-right: auto;
+            text-align: left;
+        }
+        b, p {
+            font-size: 16px;
+            margin: 0;
+            line-height: initial;
+            margin-right: auto;
+        }
+      }
+      .event:first-child {
+        margin: 0;
+        margin-bottom: 17vw;
+        margin-top: 4vw;
+      }
+      .event:last-child {
+        margin-top: -3vw;
+        margin-bottom: 20vw;
+
+      }
+}
+@media (max-width: 400px) {
+    .cell {
+        padding: 0;
+    }
+    .lightMobileImage {
+        top: -400px
+    }
+}

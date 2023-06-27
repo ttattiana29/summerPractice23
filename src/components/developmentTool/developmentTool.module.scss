@@ -1,0 +1,224 @@
+@import '../../global.module.scss';
+
+.main {
+    position: relative;
+    width: 100%;
+    height: 40vw;
+    background-color: var(--darkBlue);
+    overflow: hidden; 
+}
+.flex {
+    display: flex;
+    position: absolute;
+    width: 86%;
+    top: 0;
+    left: 7%;
+}
+.light {
+    position: absolute;
+    height: 200vw;
+    top: 50%;
+    right: 0;
+    max-height: 100%;
+    transform: translate(-50%, -50%) scale(2);
+}
+.flex img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+.content {
+    // background-color: green;
+}
+.content h2 {
+    max-height: 198px;
+    font-family: 'Dela Gothic One', sans-serif;
+    font-style: normal;
+    font-size: 44px;
+    line-height: 50px;
+    margin-bottom: 10vw;
+}
+.content p {
+    // background-color: blue;
+    color: var(--white);
+    height: 195px;
+    width: 560.55px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 26px;
+    line-height: 150%;
+    // letter-spacing: 0.01em;
+}
+.spanWhite {
+    color: var(--white);
+}
+.spanBlue {
+    color: var(--mainBlue);
+}
+.achievements {
+    width: 415px;
+    height: 380px;
+    // background-color: green;
+    margin-left: 15vw;
+}
+.card {
+    margin-top: 15px;
+    // background-color: blue;
+    height: 98px;
+    width: auto;
+    margin-bottom: 80px;
+    color: var(--white)
+}
+.card h2 {
+    font-family: 'Dela Gothic One', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 2rem;
+    line-height: 140%;
+    margin-bottom: 12px;;
+}
+.card p {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 150%;
+}
+@media (max-width: 1250px) {
+    .content h2 {
+        max-height: 198px;
+        font-size: 35px;
+        margin-bottom: 5vw;
+    }
+    .content p {
+        font-size: 20px;
+        width: 40vw;
+    }
+    .card h2 {
+        font-size: 36px;
+    }  
+    .card p {
+        font-size: 16px;
+    }
+    .achievements {
+        margin-left: 10vw;
+    }
+    .card {
+        align-items: center;
+        margin-top: 5%;
+        height: 70px;
+        width: auto;
+        margin-bottom: 60px;
+        color: var(--white)
+    }
+}
+@media (max-width: 950px) {
+    .main {
+        height: 55vw;
+    }
+    .flex {
+        width: 90%;
+        left: 5%;
+        top: 10%;
+    }
+    .content {
+        margin-top: 5%;
+    }
+    .content h2 {
+        max-height: 198px;
+        line-height: 3.2vw;
+        font-size: 3.4vw;
+        margin-bottom: 5vw;
+    }
+    .content p {
+        font-size: 1.9vw;
+        width: 40vw;
+    }
+    .card h2 {
+        font-size: 3vw;
+        margin-bottom: 0.1vw;
+    }  
+    .card p {
+        font-size: 1.5vw;
+    }
+    .achievements {
+        margin-left: 20vw;
+    }
+    .card {
+        align-items: center;
+        margin-top: 5%;
+        height: 70px;
+        width: auto;
+        margin-bottom: 6vw;
+        color: var(--white)
+    }
+}
+@media (max-width: 750px) {
+    .card {
+        margin-bottom: 4vw;
+    }
+}
+@media (max-width: 550px) {
+    .main {
+        height: 594px;
+    }
+    .flex {
+        width: 70%;
+        left: 15%;
+        top: 0;
+        display: block;
+    }
+    .light {
+        position: absolute;
+        height: 200vw;
+        top: 50%;
+        right: -45%;
+        max-height: 100%;
+        transform: translate(-50%, -50%) scale(1.5);
+    }
+    .flex img {
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+    .content {
+        margin-top: 0;;
+        margin: 0 auto;
+        // background-color: yellow;
+    }
+    .content h2 {
+        width: auto;
+        font-size: 24px;
+        margin-bottom: 19.51px;
+        line-height: 30px;
+    }
+    .content p {
+        width: auto;
+        height: auto;
+        font-size: 14px;
+        margin-bottom: 55.66px;
+    }
+    .achievements {
+        width: auto;
+        margin: 0 auto;
+        text-align: center;
+        // background-color: green;
+    }
+    .card {
+        // width: auto;
+        margin-bottom: 44px;
+    }
+    .card h2 {
+        font-size: 18px;
+    }
+    .card p {
+        font-size: 14px;
+    }
+
+}
+@media (max-width: 450px) {
+    .flex {
+        width: 92%;
+        left: 4%;
+        display: block;
+    }
+}

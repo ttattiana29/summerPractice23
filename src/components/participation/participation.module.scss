@@ -1,0 +1,155 @@
+@import '../../global.module.scss';
+
+.main {
+    width: 86%;
+    margin: 70px auto 0;
+    padding-top: 46px;
+}
+.effectiveCommunication {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: #5B93E1;
+}
+.mainTitle {
+    font-family: 'Dela Gothic One', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 44px;
+    line-height: 150%;
+    color: var(--white);
+    margin-bottom: 87.62px;
+}
+.elipsesImage {
+    position: absolute;
+    top: 170px;
+    left: 0;
+    width: 100%;
+    height: auto;
+}
+.cells {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 17%;
+    color: var(--white);
+}
+.cell {
+    width: calc(25%);
+    // height: 170px;
+    height: auto;
+    margin-bottom: 7%;
+    box-sizing: border-box;
+    margin-right: 5%;
+}
+.cell2 {
+    width: calc(20%);
+    // height: 170px;
+    height: auto;
+    margin-bottom: 7%;
+    box-sizing: border-box;
+    margin-right: 10%;
+}
+.cell3 {
+    width: calc(20%);
+    // height: 170px;
+    height: auto;
+    margin-bottom: 7%;
+    box-sizing: border-box;
+    margin-right: 6%;
+}
+
+.cells h2 {
+    font-size: 26px;
+    margin-bottom: 14px;
+}
+.cells p {
+    font-size: 16px;
+}
+@media (max-width: 1265px) {
+    .cells {
+        margin-top: 15%;
+    }
+    .cells h2 {
+        font-size: 24px;
+        margin-bottom: 12px;
+    }
+    .cells p {
+        font-size: 14px;
+    }
+    .cell, .cell2, .cell3{
+        margin-bottom: 12%;
+    }
+}
+@media (max-width: 1100px) {
+    .cells {
+        margin-top: 15%;
+    }
+    .cells h2 {
+        font-size: 22px;
+        margin-bottom: 10px;
+    }
+    .cells p {
+        font-size: 14px;
+    }
+    .cell, .cell2, .cell3{
+        margin-bottom: 9%;
+    }
+}
+@media (max-width: 950px) {
+    .main {
+        margin-top: 10px;
+        width: 70%;
+    }
+    .effectiveCommunication {
+        font-size: 8px;
+    }
+    .mainTitle {
+        font-size: 24px;
+        margin-bottom: 0;
+    }
+    .elipsesImage {
+        display: none;
+    }
+    .cells {
+        margin-top: 32px;
+    }
+    .cells div {
+        width: calc(50% - 10px);
+        height: 150px;
+        margin-bottom: 20px;
+        box-sizing: border-box;
+        margin-right: 0;
+    }
+    .cells h2 {
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+    .cells p {
+        font-size: 12px;
+    }
+}
+@media (max-width: 550px) {
+    .main {
+        width: 75%;
+    }
+    .cells div {
+        width: 152px;
+        height: 115px;
+    }
+    .cells h2 {
+        font-size: 14px;
+    }
+    .cells p {
+        font-size: 10px;
+    }
+}
+@media (max-width: 405px) {
+    .main {
+        width: 90%;
+    }
+}

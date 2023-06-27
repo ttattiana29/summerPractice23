@@ -1,0 +1,140 @@
+@import '../../global.module.scss';
+
+.header {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    padding-right: 126px;
+    background: #010310;
+    opacity: 0.9;
+    box-sizing: border-box;
+  }
+  .flex {
+    display: flex;
+  }
+  .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  .menu {
+    margin-left: auto;
+  }
+  .menuIcon {
+    margin-left: auto;
+    background-color: transparent;
+    border: none;
+  }
+  .logo {
+    margin-left: 16.37px;
+    height: 22.82px;
+    background-size: 100%;
+  }
+  .nav {
+    width: auto;
+    height: 17px;
+    margin-left: auto;
+  }
+  .nav ul {
+    margin-left: auto;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    margin: 0;
+    padding: 0;
+  }
+  .nav li {
+    color: var(--white);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 17px;
+    margin-left: 47px;
+    text-align: center;
+    list-style: none;
+  }
+  .icon {
+    background-size: 100%;
+    height: 12px;
+    margin-right: 16px;
+  }
+  hr{
+    height: 1px;
+    opacity: 15%;
+    background-color: var(--white);
+    transform: rotate(0.36deg);
+    border: none;
+    margin-bottom: 19px;
+  }
+  .contact {
+    height: auto;
+    width: 197px;
+    margin: 66.29px auto 60px;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 12px;
+  }
+  .contact .flex {
+    margin-top: 8px;
+  }
+  .contact a{
+    color: #6C98C0;
+    text-decoration: none;
+  }
+  .telegram {
+    height: 10.62px;
+    background-size: 100%;
+    margin-right: 11.75px;
+    margin-left: 5.62px;
+  }
+  @media (max-width: 550px) {
+    .header {
+        background-color: #000511;
+      height: 49px;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    .menu {
+        position: relative;
+        margin-left: auto;
+        width: auto;
+    }
+    .menuIcon {
+        margin-left: auto;
+    }
+    .nav {
+        position: absolute;
+        top: 100%;
+        right: 0;
+        bottom: 0;
+        width: 277px;
+        height: 413.91px;
+        background-color: #000511;
+        padding-top: 35.45px;
+        box-sizing: border-box;
+    }
+    .nav ul {
+        display: block;
+        height: auto;
+        width: 197px;
+        margin: 0 auto;
+    }
+    .nav li {
+        text-align: left;
+        margin: 0;
+        width: auto;
+        margin-right: auto;
+        display: block;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 23px;
+        margin-bottom: 19px;
+    }
+    .nav li p{
+        font-family: 'Dela Gothic One', sans-serif;
+    }
+    .header img {
+      margin-bottom: 0;
+    }
+  }
